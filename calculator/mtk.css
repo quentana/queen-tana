@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/736x/fb/11/12/fb11124caf40fd2bf227a1cbe5dadd5e.jpg); /* Ganti dengan path gambar Anda */
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav{
+    background-color: #f1efebe7;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: larger;
+    overflow: hidden;
+    padding: 5px;
+    position: fixed; 
+    z-index: 1000;
+}
+
+.nav_head{
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #00178f;
+}
+.nav_head span{
+    color:#4b96ff;
+}
+
+li{
+    display: flew;
+    float: inline-start;
+    overflow: hidden;
+}
+li a{  
+    padding: 15px;
+    display: block;
+    color: white;
+}
+li a:hover{
+    color: #00e2e0;
+}
+.contact_btn{
+    padding: 10px 30px;
+    color: black;
+    margin-left: 8rem;
+    background-color: #ed227e;
+    border-radius: 30px;
+    font-size: large;
+    cursor: pointer;  
+    transition: .5s ease-in-out;
+}
+.contact_btn:hover{
+    color: white;
+    border: 2px solid #ed2279;
+    background: transparent;
+}
+/*menu*/
+
+div.card{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: justify;
+    margin: 70px;
+    color: white;
+} 
+.menu_card{
+    background-color: rgb(48,48,48);
+    padding: 30px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.menu_card:hover{
+    border: 2px solid #00e2e0;
+    background-color: #00e2e0;
+    transform: translateY(-20px);
+}
+.mwnu_card i{
+    font-size: 40px;
+    color: #00178f;
+}
+.menu_card h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.menu_card p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu_card a{
+    font-size: large;
+    color: #007bff;
+}
+/*geometri*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+input, button {
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.back-btn {
+    background-color: #6c757d;
+    color: white;
+    margin-top: 20px;
+}
+.back-btn:hover {
+    background-color: #5a6268;
+}

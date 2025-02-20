@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mtk.css">
+</head>
+<body>
+    <nav>
+        
+        <h1 class="nav_head"><a href="calcu.html">Calcu<span>lator.</span></h1></a>
+        <label for="check" class="checkbtn">
+
+        </label>
+        <ul>
+            <li><a href="#home">Geomerti Takterhinga</a></li>
+            <li><a href="#about">Aritmatika</a></li>
+            <li><a href="#Sercive">Geomerti Terhinga</a></li>
+        </ul>
+    </div> 
+    </nav>
+        <div class="form-container">
+            <h3>Kalkulator Pola Bilangan Aritmatika</h3>
+            <form method="POST">
+                <input type="number" name="a" placeholder="Masukkan bilangan pertama (a)" required>
+                <input type="number" name="d" placeholder="Masukkan beda (r)" required>
+                <input type="number" name="n" placeholder="Masukkan jumlah suku (n)" required>
+                <button type="submit">Hitung</button>
+            </form>
+            <?php
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $a = $_POST['a']; 
+                $d = $_POST['d']; 
+                $n = $_POST['n']; 
+    
+    
+                $Sn = ($n / 2) * (2 * $a + ($n - 1) * $d);
+                echo "<p>Jumlah $n suku pertama: $Sn</p>";
+            }
+            ?>
+    
+            <a href="calcu.html  ">
+                <button class="back-btn">Kembali ke Dashboard</button>
+            </a>
+        </div> 
+</body>
+</html>
